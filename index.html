@@ -22,7 +22,7 @@
             
 
             #menu{
-                margin: 10px;
+                margin: 30px;
                 font-size: 30px;
                 text-align: center;
                
@@ -33,6 +33,17 @@
                 text-decoration: none;
                 color: #7ab6da;
             }
+            
+            @media screen and (max-width: 600px){
+                .menu-item{
+                    display: none;
+                
+                }
+            }
+            
+            
+            
+
             
 
             
@@ -45,21 +56,23 @@
                 background-color: aqua;
                 font-size:80px;
                 color: mediumblue;
+                width: 460px;
+                margin-top: 0;
                 margin-bottom: 10px;
                 margin-left: 40px;
             }
             @media screen and (max-width: 1024px){
                 h1{
-                    font-size: 60px;
+                    font-size: 70px;
                     text-align: center;
-                    margin-left: 0;
-                    margin-top: 0;
+                    margin:0 auto;
                 }
             }
             
             h4{
                 background-color: aqua;
                 font-size: 35px;
+                width: 460px;
                 color: steelblue;
                 margin-top: 0;
                 margin-left: 50px;
@@ -68,36 +81,61 @@
             @media screen and (max-width: 1024px){
                 h4{
                     text-align: center;
-                    margin-left: 0;
-                
-                }
-            }
-            
-            @media screen and (max-width: 1024px){
-                h4{
+                    margin: 0 auto;
                     font-size: 30px;
                 
                 }
             }
             
+
+            
             p{
+                background-color: aqua;
                 margin-left: 50px;
                 color: skyblue;
-                width:300px;
+                width:460px;
                 font-size: 20px;
                 text-align: justify;
             }
             
             @media screen and (max-width: 1024px){
                 p{
-                    margin: 0 auto;
-                    width: 90%;
+                    margin: 20px auto;
                     text-align: center;
                 
                 }
-            }         
+            }     
             
+            #burger{
+                width: 50px;
+                height: 30px;
+                cursor:pointer;
+                margin: 30px 0 20px 20px;
 
+                
+                
+            }
+            @media screen and (min-width: 600px){
+                #burger{
+                    display: none;
+                    
+                }
+            }  
+            
+            .bar{
+                height:6px;
+                width: 100%;
+                background-color: #7ab6da;
+                display:block;
+                border-radius: 5px;
+            }
+            
+            #bar1{
+                transform: translateY(-6px);
+            }
+            #bar3{
+                transform: translateY(6px);
+            }
             
             
         </style>
@@ -114,12 +152,18 @@
         
             <div id="header">
                 
-                <div id="menu">
-                    
+                    <div id="burger">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                
+                <div id="menu">   
                     <a class="menu-item" href="">Home</a>
                     <a class="menu-item" href="">Services</a>
                     <a class="menu-item" href="">About</a>
                     <a class="menu-item" href="">Contact</a>
+
                 </div>
 
             </div>
