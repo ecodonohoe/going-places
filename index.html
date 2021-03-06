@@ -59,6 +59,7 @@
                 color: mediumblue;
                 margin-bottom: 10px;
                 margin-left: 40px;
+                margin-top: 0;
             }
             @media screen and (max-width: 1024px){
                 h1{
@@ -140,6 +141,37 @@
                 transform: translateY(6px);
             }
             
+            section{
+                width: 100%;
+                height: 100vh;
+                
+            }
+            
+            #service{
+                background-color: aqua;
+                
+            }
+            #about{
+                background-color: blueviolet;
+            }
+            
+            h2{
+                font-size: 50px;
+                color:aliceblue;
+                margin:0;
+                
+            }
+            
+            .main-text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                height: 100vh;
+            }
+
+            
             
         </style>
         
@@ -151,7 +183,7 @@
     
         <div id="container">
             
-            
+            <section id="home">
         
             <div id="header">
                 
@@ -180,10 +212,20 @@
             
             
         </div>
-        
+        </section>
+        <section id="service">
+            <div class="main-text">
+            <h2>Services</h2>
+            </div>
         <div id="footer">
         
         </div>
+        </section>
+        <section id="about">
+            <div class="main-text">
+            <h2>About</h2>
+            </div>
+        </section>
         </div>
       
     </body>
