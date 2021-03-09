@@ -8,6 +8,8 @@
         
         <style type="text/css">
             
+
+            
             body{
                 background-color: white;
                 margin: 0;
@@ -18,6 +20,7 @@
                 
                 width:100%;
                 margin: auto;
+                
             }
             
 
@@ -33,6 +36,11 @@
                 margin-left: 40px;
                 text-decoration: none;
                 color: #7ab6da;
+                
+            }
+            
+            #home{
+                margin-left: 0;
             }
             
             @media screen and (max-width: 600px){
@@ -42,26 +50,22 @@
                 }
             }
             
-            
-            
-
-            
-
-            
             #menu a:hover{
-                color:mediumblue;
+                color:#5735df;
+                
+                
             }
 
             
             h1{
-                background-color: aqua;
+                
                 font-size:80px;
-                color: mediumblue;
+                color: #5735df;
                 margin-bottom: 10px;
                 margin-left: 40px;
                 margin-top: 0;
             }
-            @media screen and (max-width: 1024px){
+            @media screen and (max-width: 768px){
                 h1{
                     font-size: 60px;
                     text-align: center;
@@ -71,14 +75,15 @@
             }
             
             h4{
-                background-color: aqua;
+                
                 font-size: 35px;
-                color: steelblue;
+                color: #a8a8a8;
                 margin-top: 0;
+                margin-bottom: 5px;
                 margin-left: 50px;
             }
             
-            @media screen and (max-width: 1024px){
+            @media screen and (max-width: 768px){
                 h4{
                     text-align: center;
                     margin-left: 0;
@@ -86,7 +91,7 @@
                 }
             }
             
-            @media screen and (max-width: 1024px){
+            @media screen and (max-width: 768px){
                 h4{
                     font-size: 30px;
                 
@@ -95,17 +100,19 @@
             
             p{
                 margin-left: 50px;
-                color: skyblue;
+                color: #a8a8a8;
                 width:300px;
                 font-size: 20px;
                 text-align: justify;
             }
             
-            @media screen and (max-width: 1024px){
+            @media screen and (max-width: 768px){
                 p{
+                   
                     margin: 0 auto;
-                    width: 90%;
+                    width: 95%;
                     text-align: center;
+                    
                 
                 }
             }     
@@ -141,36 +148,24 @@
                 transform: translateY(6px);
             }
             
-            section{
-                width: 100%;
-                height: 100vh;
-                
-            }
-            
-            #service{
-                background-color: aqua;
-                
-            }
-            #about{
-                background-color: blueviolet;
-            }
-            
-            h2{
-                font-size: 50px;
-                color:aliceblue;
-                margin:0;
-                
-            }
-            
-            .main-text {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                width: 100%;
-                height: 100vh;
-            }
 
+            #bg{
+               display: block;
+               margin: 0 auto;
+               width: 95%;
+               margin-bottom: 20px;  
+                
+            }
+            
+            .clear{
+                clear: both;
+            }
+            
+            #services{
+                background-color: #7ab6da;
+                height: 100vh;
+                margin-top:40px;
+            }
             
             
         </style>
@@ -183,7 +178,7 @@
     
         <div id="container">
             
-            <section id="home">
+            
         
             <div id="header">
                 
@@ -194,7 +189,7 @@
                     </div>
                 
                 <div id="menu">   
-                    <a class="menu-item" href="">Home</a>
+                    <a id="home" class="menu-item" href="">Home</a>
                     <a class="menu-item" href="">Services</a>
                     <a class="menu-item" href="">About</a>
                     <a class="menu-item" href="">Contact</a>
@@ -206,28 +201,26 @@
         <div id="main">
             <h1>Going Places</h1>
             <h4>Choose your path, <br> Go your own way.</h4>
+            
+            
+                <img id="bg" src="assets/undraw_going_up.svg">
+           
                 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      
+          
+        </div>
+        
+        <div class="clear"></div>
             
+        <div id="services">
             
         </div>
-        </section>
-        <section id="service">
-            <div class="main-text">
-            <h2>Services</h2>
-            </div>
+       
+        
         <div id="footer">
         
         </div>
-        </section>
-        <section id="about">
-            <div class="main-text">
-            <h2>About</h2>
-            </div>
-        </section>
         </div>
-      
     </body>
 
 </html>
