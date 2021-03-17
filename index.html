@@ -3,7 +3,7 @@
     
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  
         <title>Going Places</title>
         
         <style type="text/css">
@@ -14,25 +14,27 @@
                 background-color: white;
                 margin: 0;
                 padding: 0;
+                
+               
             }
             
             #container{
-                
                 width:100%;
-                margin: auto;
-                
-                
+                margin: auto;  
             }
-            
+
+            #main{
+                padding-top: 20px;
+                height: 100vh;
+            }
 
             #menu{
-                margin-top: 15px;
-                margin-bottom: 10px;
+                
+                margin-bottom: 40px;
                 font-size: 40px;
                 text-align: center;
                
             }
-            
             
             
             .menu-item{
@@ -40,7 +42,9 @@
                 text-decoration: none;
                 color: #7ab6da;
                 
-                
+            }
+            .menu-item:hover{
+                color:#5735df;
                 
             }
             
@@ -55,10 +59,7 @@
                 }
             }
             
-            #menu a:hover{
-                color:#5735df;
-                
-            }
+
 
             
             h1{
@@ -79,8 +80,8 @@
             }
             
             h2{
-                margin-top:0;
-                font-size: 50px;
+                padding-top:20px;
+                font-size: 80px;
                 color: #5735df;
                 text-align: center;
             }
@@ -209,24 +210,31 @@
             
             #services{
                 
-                height: 100vh;
+                height: 100%;
                 margin-top:5px;
             }
-            #main{
-                margin-top: 50px;
-                height: 100vh;
+
+
+            .grid-container{
+                display: grid;
+
             }
-            
-            .image{
+
+            @media screen and (min-width: 768px){
+                .grid-container{
+                    grid-template-columns: auto auto;
+                    grid-gap:10px;
+                    padding: 10px;
+                }
+            }
+             
+            .grid-item{
                 display: block;
-                margin: 40px auto;
+                margin: 10px auto;
                 width: 50%;
             }
             
-
-
-
-            
+ 
         </style>
         
 
@@ -238,7 +246,7 @@
         <div id="container">
             
             
-        
+         <div id="main">
             <div id="header">
                 
                     <div id="burger">
@@ -257,7 +265,7 @@
 
             </div>
         
-        <div id="main">
+        
             <h1>Going Places</h1>
             <h4>Choose your path, <br> Go your own way.</h4>
             
@@ -275,22 +283,24 @@
             
             <h2>Services</h2>
             
+        <div class="grid-container">
             <div class="icon">
-                <img class="image" src="assets/career.svg">
+                <img id="img1" class="grid-item" src="assets/career.svg">
                 <h3>Career Guidance</h3>
             </div>
             <div class="icon">
-                <img class="image" src="assets/online-education.svg">
-                <h3>CAO/Further Education Advice</h3>
+                <img id="img2" class="grid-item" src="assets/online-education.svg">
+                <h3>CAO/Further Education <br/> Advice</h3>
             </div>
             <div class="icon">
-                <img class="image" src="assets/study.svg">
+                <img id="img3" class="grid-item" src="assets/study.svg">
                 <h3>Study Skills</h3>
             </div>
             <div class="icon">
-                <img class="image" src="assets/travel.svg">
+                <img id="img4" class="grid-item" src="assets/travel.svg">
                 <h3>Applying Abroad</h3>
             </div>
+        </div>
         </div>
        
         
