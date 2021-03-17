@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <title>Going Places</title>
+        
+        <style type="text/css">
+            
+
+            
+            body{
+                background-color: white;
+                margin: 0;
+                padding: 0;
+                
+               
+            }
+            
+            #container{
+                width:100%;
+                margin: auto;  
+            }
+
+            #main{
+                padding-top: 20px;
+                height: 100vh;
+                
+  
+                
+            }
+
+            #menu{
+                
+                margin-bottom: 40px;
+                font-size: 40px;
+                text-align: center;
+               
+            }
+            
+            
+            .menu-item{
+                margin-left: 40px;
+                text-decoration: none;
+                color: #7ab6da;
+                
+            }
+            .menu-item:hover{
+                color:#5735df;
+                
+            }
+            
+            #home{
+                margin-left: 0;
+            }
+            
+            @media screen and (max-width: 608px){
+                .menu-item{
+                    display: none;
+                
+                }
+            }
+            
+
+
+            
+            h1{
+                
+                font-size:80px;
+                color: #5735df;
+                margin-bottom: 10px;
+                margin-left: 40px;
+                margin-top: 0;
+            }
+            @media screen and (max-width: 769px){
+                h1{
+                    font-size: 60px;
+                    text-align: center;
+                    margin-left: 0;
+                    margin-top: 0;
+                }
+            }
+            
+            h2{
+                padding-top:20px;
+                font-size: 80px;
+                color: #5735df;
+                text-align: center;
+            }
+            
+            h3{
+                margin-top:0;
+                font-size: 30px;
+                color: #7ab6da;
+                text-align: center;
+            }
+            
+            h4{
+                
+                font-size: 35px;
+                color: #a8a8a8;
+                margin-top: 0;
+                margin-bottom: 5px;
+                margin-left: 50px;
+            }
+            
+            @media screen and (max-width: 769px){
+                h4{
+                    text-align: center;
+                    margin-left: 0;
+                
+                }
+            }
+            
+            @media screen and (max-width: 769px){
+                h4{
+                    font-size: 30px;
+                
+                }
+            }
+            
+            p{
+                margin-left: 50px;
+                color: #a8a8a8;
+                width:300px;
+                font-size: 20px;
+                text-align: justify;
+            }
+            
+            @media screen and (max-width: 769px){
+                p{
+                   
+                    margin: 0 auto;
+                    width: 95%;
+                    text-align: center;
+                    
+                
+                }
+            }     
+            
+            #burger{
+                
+                width: 50px;
+                height: 30px;
+                cursor:pointer;
+                margin: 40px 0 20px 20px;
+
+                
+                
+            }
+            @media screen and (min-width: 608px){
+                #burger{
+                    display: none;
+                
+                }
+            }  
+            
+            .bar{
+                height:6px;
+                width: 100%;
+                background-color: #7ab6da;
+                display:block;
+                border-radius: 5px;
+            }
+            
+            #bar1{
+                transform: translateY(-6px);
+            }
+            #bar3{
+                transform: translateY(6px);
+            }
+            
+
+            #bg{
+               display: block;
+               margin: 0 auto;
+               width: 90%;
+               margin-bottom: 20px;  
+                
+            }
+
+            @media screen and (min-width:769px){
+                #bg{
+                    position: absolute;
+                    top:200px;
+                    right:30px;
+                    width:50%;
+                    margin-bottom: 0;
+                }
+            }
+            @media screen and (min-width:1024px){
+                #bg{
+                    position: absolute;
+                    top:150px;
+                    right:30px;
+                    width:60%;
+                }
+            }
+            
+            @media screen and (min-width:1300px){
+                #bg{
+                    position: absolute;
+                    top:120px;
+                    right:30px;
+                    width:65%;
+                }
+            }
+          
+            .clear{
+                clear: both;
+            }
+            
+            #services{
+                
+                height: 100%;
+                margin-top:5px;
+                background-color: rgb(238, 237, 237);
+                
+            }
+
+
+            .grid-container{
+                display: grid;
+
+            }
+
+            @media screen and (min-width: 768px){
+                .grid-container{
+                    grid-template-columns: auto auto;
+                    grid-gap:10px;
+                    padding: 10px;
+                }
+            }
+             
+            .grid-item{
+                display: block;
+                margin: 10px auto;
+                width: 50%;
+            }
+            
+ 
+        </style>
+        
+
+    
+    </head>
+    
+    <body>
+    
+        <div id="container">
+            
+            
+         <div id="main">
+            <div id="header">
+                
+                    <div id="burger">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                
+                <div id="menu">   
+                    <a id="home" class="menu-item" href="">Home</a>
+                    <a class="menu-item" href="">Services</a>
+                    <a class="menu-item" href="">About</a>
+                    <a class="menu-item" href="">Contact</a>
+
+                </div>
+
+            </div>
+        
+        
+            <h1>Going Places</h1>
+            <h4>Choose your path, <br> Go your own way.</h4>
+            
+            
+                <img id="bg" src="assets/undraw_going_up.svg">
+           
+                
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          
+        </div>
+        
+        <div class="clear"></div>
+            
+        <div id="services">
+            
+            <h2>Services</h2>
+            
+        <div class="grid-container">
+            <div class="icon">
+                <img id="img1" class="grid-item" src="assets/career.svg">
+                <h3>Career Guidance</h3>
+            </div>
+            <div class="icon">
+                <img id="img2" class="grid-item" src="assets/online-education.svg">
+                <h3>CAO/Further Education <br/> Advice</h3>
+            </div>
+            <div class="icon">
+                <img id="img3" class="grid-item" src="assets/study.svg">
+                <h3>Study Skills</h3>
+            </div>
+            <div class="icon">
+                <img id="img4" class="grid-item" src="assets/travel.svg">
+                <h3>Applying Abroad</h3>
+            </div>
+        </div>
+        </div>
+       
+        
+        <div id="footer">
+        
+        </div>
+        </div>
+    </body>
+
+</html>
