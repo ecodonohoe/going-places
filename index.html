@@ -15,7 +15,7 @@
                 background-color: white;
                 margin: 0;
                 padding: 0;
-                font-family: Poppins;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 
                
             }
@@ -27,10 +27,12 @@
 
             #main{
                 padding-top: 20px;
-                
-                
-  
-                
+                margin-bottom: 300px;
+            }
+            @media screen and (max-width: 1000px){
+                #main{
+                    margin-bottom: 50px;
+                }
             }
 
             #menu{
@@ -46,6 +48,7 @@
                 margin-left: 40px;
                 text-decoration: none;
                 color: #7ab6da;
+                
                 
             }
             .menu-item:hover{
@@ -219,8 +222,8 @@
             #services{
                 
                 height: 100%;
-                margin-top:5px;
-                background-color: rgb(238, 237, 237);
+                margin-top:20px;
+                
                 
             }
 
@@ -232,7 +235,7 @@
 
             @media screen and (min-width: 768px){
                 .grid-container{
-                    grid-template-columns: auto auto;
+                    grid-template-columns: auto auto auto auto;
                     grid-gap:10px;
                     padding: 10px;
                 }
@@ -244,8 +247,9 @@
                 width: 40%;
             }
             #about{
+                margin-top: 50px;
                 height: 100vh;
-                background-color: #7ab6da;
+                
                 
             }
             #contact{
@@ -261,6 +265,9 @@
                 text-align: center;
                 padding-top: 15px;
                    
+            }
+            #img1, #img2, #img3, #img4{
+                width:200px;
             }
  
             
